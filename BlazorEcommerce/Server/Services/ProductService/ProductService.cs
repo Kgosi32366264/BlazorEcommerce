@@ -1,8 +1,6 @@
-﻿using BlazorEcommerce.Server.Data;
-
-namespace BlazorEcommerce.Server.Services.ProductService
+﻿namespace BlazorEcommerce.Server.Services.ProductService
 {
-  public class ProductService : IProductService
+    public class ProductService : IProductService
   {
     private readonly DataContext _context;
     public ProductService(DataContext context)
