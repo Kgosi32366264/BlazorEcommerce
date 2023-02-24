@@ -20,11 +20,11 @@ namespace BlazorEcommerce.Server.Controllers
         return Ok(result);
     }
 
-    [HttpGet("{categoryId}")]
-    public async Task<ActionResult<ServiceResponse<Category>>> GetCategoriesAsync(int categoryId)
-    {
-        var result = await _catergoryService.GetCategoryAsync(categoryId);
-        return Ok(result);
-    }
+    //[HttpGet("{categoryId}")]
+    //public async Task<ActionResult<ServiceResponse<Category>>> GetCategoriesAsync(int categoryId)
+    //{
+    //    var result = await _catergoryService.GetCategoryAsync(categoryId);
+    //    return Ok(result);
+    //}
   }
 }

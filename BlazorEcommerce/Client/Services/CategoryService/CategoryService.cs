@@ -4,7 +4,7 @@
     {
         private readonly HttpClient _httpClient;
 
-        public List<Category> Categories { get; set; } = new();
+        public List<Category> Categories { get; set; } = new List<Category>();
         public CategoryService(HttpClient httpClient)
         {
             _httpClient = httpClient;

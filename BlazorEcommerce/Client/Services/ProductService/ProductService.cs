@@ -2,7 +2,7 @@
 {
   public class ProductService : IProductService
   {
-    public event Action ProductsCahnged;
+    public event Action ProductsChanged;
     private readonly HttpClient _httpClient;
     public List<Product> Products { get; set; } = new();
     public ProductService(HttpClient httpClient)
@@ -19,7 +19,7 @@
         if (result != null && result.Data != null)
             Products = result.Data;
 
-      ProductsCahnged.Invoke();
+      ProductsChanged.Invoke();
     }
 
     public async Task<ServiceResponse<Product>> GetProductAsync(int productId)
